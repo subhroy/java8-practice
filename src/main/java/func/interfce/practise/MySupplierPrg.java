@@ -4,7 +4,7 @@ package func.interfce.practise;
 import java.util.Date;
 import java.util.function.Supplier;
 
-public class MySupplierTest {
+public class MySupplierPrg {
     public static void main(String[] args) {
 
         //getting date

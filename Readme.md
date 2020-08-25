@@ -12,7 +12,7 @@ _You can find all useful references below_
 
 
 ## Contacts
-You can reach me out in the below email address,
+You can reach me out in the below email address.
 
 |Name|Email|   
 |----|-----|      

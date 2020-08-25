@@ -1,6 +1,6 @@
 package innerclass.practise;
 
-public class AnonymousInnerClassTest {
+public class AnonymousInnerClassPrg {
 
     public static void main(String[] args) {
         Runnable r = new Runnable() {

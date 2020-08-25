@@ -2,7 +2,7 @@ package func.interfce.practise;
 
 import java.util.function.Function;
 
-public class MyFunctionalTest {
+public class MyFunctionalPrg {
     public static void main(String[] args) {
         Function<String, Integer> fIntf = s -> s.length();
         int length = fIntf.apply("subhasis");

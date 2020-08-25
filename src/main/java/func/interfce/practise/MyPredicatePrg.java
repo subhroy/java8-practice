@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.function.Predicate;
 
-public class MyPredicateTest {
+public class MyPredicatePrg {
 
     public static void main(String[] args) {
         Predicate<Integer> pObj1 = (I) -> I>20;

@@ -2,6 +2,8 @@
 
 Reference to study String
 
+[Java String](https://www.edureka.co/blog/java-string/)
+
 [String Pool](https://www.edureka.co/blog/java-string-pool/)
 
 
