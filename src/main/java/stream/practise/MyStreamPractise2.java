@@ -21,5 +21,32 @@ public class MyStreamPractise2 {
 
         List resultLst2 = nameList.stream().map(s -> s.length()).collect(Collectors.toList());
         System.out.println(resultLst2);
+
+        List resultLst3 = nameList.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+        System.out.println(resultLst3);
+
+        long noOfTotalStreamElement = nameList.stream().count();
+        System.out.println(noOfTotalStreamElement);
+
+        long noOfElement7 = nameList.stream().filter(s->s.length()>6).count();
+        System.out.println(noOfElement7);
+
+
+        ArrayList<Integer> numberList = new ArrayList<Integer>();
+        numberList.add(15);
+        numberList.add(5);
+        numberList.add(25);
+        numberList.add(10);
+        numberList.add(20);
+        System.out.println(numberList);
+
+        //Default sorting by sorted() method of Stream
+        List<Integer> sortedLst = numberList.stream().sorted().collect(Collectors.toList());
+        System.out.println(sortedLst);
+
+        //Custom sorting by Stream
+        List<Integer> customSortedLst = numberList.stream().sorted((i1,i2)-> -i1.compareTo(i2)).collect(Collectors.toList());
+        System.out.println(customSortedLst);
+
     }
 }
