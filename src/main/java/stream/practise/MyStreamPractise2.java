@@ -78,5 +78,12 @@ public class MyStreamPractise2 {
         //now you can call any method of stream on this
         System.out.println("print each element");
         st.forEach(System.out::println);
+
+
+        //Creating a double array and convert it to stream and using that stream
+        Double[] myArr = {10.1,10.2,10.3,10.4,10.5};
+        Stream<Double> mystream = Stream.of(myArr);
+        mystream.forEach(System.out::println);
+
     }
 }
