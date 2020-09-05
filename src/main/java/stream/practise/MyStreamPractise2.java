@@ -3,6 +3,7 @@ package stream.practise;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MyStreamPractise2 {
 
@@ -60,7 +61,22 @@ public class MyStreamPractise2 {
         nameList.stream().forEach(s -> System.out.println(s));
 
         System.out.println("\n -----try printing using method reference ---- \n");
+
         //forEach of Stream using method reference
         nameList.stream().forEach(System.out::println);
+
+
+        //toArray method of Stream
+        Integer[] arr = numberList.stream().toArray(Integer[] ::new);
+        for(Integer x : arr){
+            System.out.println(x);
+        }
+
+
+        //Stream.of on Group of values.
+        Stream<Integer> st =Stream.of(3,33,333,3333,33333); // creating the stream object here..
+        //now you can call any method of stream on this
+        System.out.println("print each element");
+        st.forEach(System.out::println);
     }
 }
