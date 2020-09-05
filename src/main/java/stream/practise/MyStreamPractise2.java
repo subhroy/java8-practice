@@ -48,5 +48,19 @@ public class MyStreamPractise2 {
         List<Integer> customSortedLst = numberList.stream().sorted((i1,i2)-> -i1.compareTo(i2)).collect(Collectors.toList());
         System.out.println(customSortedLst);
 
+
+        //Find min and max value inside Stream
+        Integer minValue = numberList.stream().min((i1,i2)->i1.compareTo(i2)).get();
+        System.out.println(minValue);
+
+        Integer maxValue = numberList.stream().max((i1,i2)->i1.compareTo(i2)).get();
+        System.out.println(maxValue);
+
+        //forEach of Stream
+        nameList.stream().forEach(s -> System.out.println(s));
+
+        System.out.println("\n -----try printing using method reference ---- \n");
+        //forEach of Stream using method reference
+        nameList.stream().forEach(System.out::println);
     }
 }
