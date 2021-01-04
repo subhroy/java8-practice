@@ -33,7 +33,7 @@ public class MyStreamPractise2 {
         System.out.println("Total No of element( > 7) in nameList : " + noOfElement7);
 
 
-        System.out.println("\n\n//////// ANOTHER EXAMPLE /////////////\n\n");
+        System.out.println("\n\n//////// ANOTHER EXAMPLE /////////\n\n");
         ArrayList<Integer> numberList = new ArrayList<Integer>();
         numberList.add(15);
         numberList.add(5);
